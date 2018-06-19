@@ -108,7 +108,7 @@ class App extends Component {
 
     const responsiveness = css({
       "@media(max-width: 700px)": {
-        "flex-wrap": "wrap"
+        flexWrap: "wrap"
       }
     });
 
@@ -166,22 +166,6 @@ class App extends Component {
                 affiliation or endorsement by Giveth.{" "}
                 <a href="https://giveth.io/donate/">More Info</a>
               </p>
-            </div>
-
-            <div {...responsiveness} className="flex-row d-flex amount">
-              <div className="flex-column margin">
-                <strong>Amount donated </strong>
-                <h3>{this.state.totalAmount} ETH</h3>
-              </div>
-              <div className="flex-column margin">
-                <form className="Search">
-                  <input
-                    type="text"
-                    onChange={this.onSearchChange}
-                    placeholder="filter leaderboard"
-                  />
-                </form>
-              </div>
             </div>
           </div>
 
